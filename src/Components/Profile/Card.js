@@ -3,7 +3,10 @@ import Adress from "./Adress";
 import FullName from "./FullName";
 import ProfilPhoto from "./ProfilPhoto";
 const card = () => (
-  <div className="card" style={{ width: "18rem" }}>
+  <div
+    className="card"
+    style={{ width: "18rem", background: "rgba(0,0,0,0.5)", color: "white" }}
+  >
     <ProfilPhoto />
     <div className="card-body">
       <FullName />
@@ -16,7 +19,7 @@ const card = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Facebook
+        <i className="fab fa-facebook fa-2x"></i>
       </a>
       <a
         href="https://github.com/SaberGuirat"
@@ -24,7 +27,7 @@ const card = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        GitHub
+        <i className="fab fa-github fa-2x"></i>
       </a>
     </div>
   </div>
